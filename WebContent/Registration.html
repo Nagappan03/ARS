@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" type="text/css" href="Registration.css">
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="Registration.css">
+    </head>
+
+    <body>
+     
+      <form action="RegistrationServlet" method="get">
+      
+        <h1>Registration</h1>
+        
+        <fieldset>
+          <legend>Basic Information</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name"  required>
+
+          <label for="phone">Mobile:</label>
+          <input type="tel" id="phone" name="user_phone" placeholder="Please enter a 10-digit mobile number" pattern="[0-9]{10}"  required>
+
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" name="user_email"  required>
+
+	  <label for="address">Address:</label>
+          <textarea rows="4" cols="50" id="address" name="user_address"  required></textarea>
+           
+	  <label>Gender:</label>
+          <input type="radio" id="male" value="male" name="user_gender" checked><label for="male" class="light">Male</label><br>
+          <input type="radio" id="female" value="female" name="user_gender"><label for="female" class="light">Female</label><br>
+	  <input type="radio" id="other" value="other" name="user_gender"><label for="other" class="light">Other</label><br><br>
+          
+	  <label for="password">Password:</label>
+          <input type="password" id="password" name="user_password">
+	
+
+          <input type="checkbox" id="agree" name="user_agree" required>  &nbsp; I agree to the terms and conditions 
+          
+        </fieldset>
+ 		 <button type="submit">Register</button>
+
+	<a href="Login.html">Already registered?</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+	<a href="index.html">Home</a>
+	
+      </form>
+      
+    </body>
+</html>
